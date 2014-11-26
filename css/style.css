@@ -1,0 +1,235 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
+	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+/* end clearfix */
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+
+.rotate {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
+}
+
+#header {
+    padding: 1.25rem;
+    text-align: center;
+}
+#footer {
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.title {
+	color: #FFF;
+    background: #369;
+    padding: 0.8rem 1.25rem;
+}
+
+#Research { background: #B3C126; }
+#Plan { background: #FECC2F; }
+#Explore { background: #F8A227; }
+#Communicate { background: #F46320; }
+#Create { background: #DB3937; }
+#Feedbacks { background: #EE6579; }
+#Finalise { background: #A164D9; }
+#Delight { background: #40A4D8; }
+#Analyse { background: #33BEB7; }
+
+.cards {
+	border: 1px solid #f1f1f1;
+	padding:20px;
+	padding: 1.25rem;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-basis: 100%;
+	    -ms-flex-preferred-size: 100%;
+	        flex-basis: 100%;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	-webkit-box-flex: 2;
+	-webkit-flex-grow: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+}
+
+.cards div.img {
+	margin-bottom: 10px;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+}
+
+.cards .img img {
+    width: 64px;
+    height: 64px;
+}
+
+.cards .right {
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+}
+
+.card-content {
+	padding: 0 10px;
+	-webkit-box-flex: 3;
+	-webkit-flex-grow: 3;
+	    -ms-flex-positive: 3;
+	        flex-grow: 3;
+}
+
+.card-content label {
+	display: block;
+	font-size: 1.4em;
+	margin-bottom: 0.5em;
+	cursor: pointer;
+}
+
+.card-content p {
+	font-size: 0.9em;
+	line-height: normal;
+	padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+	body {
+		background: #fefefe;
+	}
+
+	.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: stretch;
+	}
+
+	.title {
+		position: relative;
+		color: #FFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+		width: 50px;
+        padding: 0;
+	}
+
+	.title span {
+		/* Abs positioning makes it not take up vert space  */
+	    position: absolute;
+	    bottom: -10px;
+	    left: 3px;
+	    
+	    /* Border is the new background */
+	    background: none;
+	    
+	    /* Rotate from top left corner (not default) */
+	    -webkit-transform-origin: 0 0;
+	    -moz-transform-origin:    0 0;
+	    -ms-transform-origin:     0 0;
+	    -o-transform-origin:      0 0;
+	    
+	    -webkit-transform: rotate(-90deg); 
+	    -moz-transform:    rotate(-90deg); 
+	    -ms-transform:     rotate(-90deg); 
+	    -o-transform:      rotate(-90deg); 
+	}
+
+/*
+	.title span:before {
+		content: '';
+		padding-top: 100%;
+		height: 0;
+		display: block;
+	}
+*/
+
+	.cards {
+	-webkit-flex-basis: 32%;
+	    -ms-flex-preferred-size: 32%;
+	        flex-basis: 32%;
+	}
+}
+
+@media print {
+	
+	@page { margin:0in; }
+	
+	body {
+		width: 100%;
+		margin: 0;
+		font-size: 0.7em;
+	}
+
+	.row {
+		text-align: center;
+	}
+
+	.cards {
+		float: none;
+		display: inline-block;
+		margin: 0;
+		width: 6cm;
+		height: 2.5cm;
+		text-align: left;
+		padding: 0;
+	}
+
+	.title,
+	.cards a,
+	.cards img {
+		display: none;
+	}
+}
