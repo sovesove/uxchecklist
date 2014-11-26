@@ -227,6 +227,14 @@ a:hover {
 		padding: 0;
 	}
 
+	.card-content label {
+		font-size: 14px;
+	}
+
+	.card-content p {
+		font-size: 10px;
+	}
+
 	.title,
 	.cards a,
 	.cards img {
