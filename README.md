@@ -1,4 +1,4 @@
-uxchecklist
+UX Project Checklist
 ===========
 
-ux project checklist
+README FILE TODO
