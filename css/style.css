@@ -47,6 +47,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 a {
 	color: blue;
 	text-decoration: none;
+	white-space: nowrap;
 }
 a:hover {
 	text-decoration: none;
