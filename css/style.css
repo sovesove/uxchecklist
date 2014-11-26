@@ -258,6 +258,7 @@ a:hover {
 		line-height: 11px;
 	}
 
+	.hide-for-print,
 	.title,
 	.cards a,
 	.cards img {
