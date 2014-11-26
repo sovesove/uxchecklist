@@ -55,10 +55,30 @@ a:hover {
 	padding-bottom: 2px;
 }
 
+#print {
+	border-radius: 5px;
+	background-color: #369;
+	color: white;
+	font-size: 0.9em;
+	line-height: normal;
+	padding: 5px 10px;
+	margin-left: 10px;
+	text-decoration: none !important;
+	border-bottom: none;
+}
+#print:hover {
+	background-color: #47B;
+}
+
 #header {
-    padding: 1.25rem;
+    padding: 0.8rem;
     text-align: center;
 }
+#header h1{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
 #footer {
     padding: 1.25rem;
     text-align: center;
@@ -230,10 +250,12 @@ a:hover {
 
 	.card-content label {
 		font-size: 14px;
+		font-weight: bold;
 	}
 
 	.card-content p {
-		font-size: 10px;
+		font-size: 9px;
+		line-height: 11px;
 	}
 
 	.title,
