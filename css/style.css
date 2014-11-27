@@ -79,6 +79,10 @@ a:hover {
 	padding: 5px 10px;
 }
 
+#title {
+	margin-bottom: 10px;
+}
+
 #footer {
     padding: 1.25rem;
     text-align: center;
