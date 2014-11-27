@@ -4,17 +4,50 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>UX Project Checklist</title>
+	<link rel="shortcut icon" href="favicon.ico?v=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
 
-	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/jquery-labelauty.css" />
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!-- GA plugin -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-57141076-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 <body>
 
-	<div id="header" class="row">
-		<h1>UX Project Checklist</h1>
-	</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=118274511611887&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+	<div id="header" class="">
+		<div id="title">
+			<h1>UX Project Checklist - ßeta</h1>&nbsp;&nbsp;<a id="print" class="hide-for-print" href="javascript:void(0)" onclick="window.print();">Print</a>
+		</div>
+		<div id="sharebox">
+			<!-- twitter plugin -->
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="sovesove" data-hashtags="uxchecklist">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			<!-- facebook plugin -->
+			<div class="fb-like" data-href="http://sove.github.io/uxchecklist/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+		</div>
+	</div>
+	
+	<form data-persist="garlic" method="POST">
 	<div class="row clearfix">
 		<div id="Research" class="title"><span>Research</span></div>
 		<div class="cards">
@@ -23,7 +56,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox1">Competitors benchmark</label>
-				<p>See how other solve similar problem, and try to not reinvent the wheel. <a class="hide-for-print" href="#">Read more</a></p>
+				<p>See how others solve similar problem, and try to not reinvent the wheel. <a class="more hide-for-print" href="http://www.userfocus.co.uk/articles/guide-to-benchmarking-UX.html" target="_blank" title="The Beginners Guide to Benchmarking User Experience">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox1" type="checkbox">
@@ -35,7 +68,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox2">Data analysis</label>
-				<p>Do you have all the useful data you need? Try to have a look at funnels, clicks, page views, performances... </p>
+				<p>Do you have all the useful data you need? Try to have a look at funnels, clicks, page views, performances... <a class="more hide-for-print" href="http://www.nngroup.com/articles/analytics-user-experience/" target="_blank" title="Three Uses for Analytics in User-Experience Practice">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox2" type="checkbox">
@@ -47,7 +80,8 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox3">User feedback</label>
-				<p>Always speak with Customer Care team! Not have one? Check your old surveys or videos, what your customer says? What they do?</p>
+				<p></p>
+				<p>Always speak with Customer Care team! Not having one? Check your old surveys or videos, what your customer says? What they actually do? <a class="more hide-for-print" href="https://www.gov.uk/service-manual/user-centred-design/user-research/index.html#qualitative-user-research-techniques" target="_blank" title="An introduction to user research techniques">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox3" type="checkbox">
@@ -63,7 +97,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox4">User stories</label>
-				<p>Hope you got your personas done yet. If not DO IT NOW. Ok, now use them to write down user stories and scenarios </p>
+				<p>Hope you got your personas done yet. If not DO IT NOW. Ok, now use them to write down user stories and scenarios. <a class="more hide-for-print" href="https://www.newfangled.com/how-to-tell-the-users-story/" target="_blank" title="How to Tell the User’s Story">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox4" type="checkbox">
@@ -75,7 +109,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox5">User flows</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Create your user's flow based on the scenarios you created, you can use it later to review the journey and create wireframes on top of each step. <a class="more hide-for-print" href="http://www.smashingmagazine.com/2012/01/04/stop-designing-pages-start-designing-flows/" target="_blank" title="Stop Designing Pages And Start Designing Flows">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox5" type="checkbox">
@@ -87,7 +121,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox6">Red routes</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Define red routes for your product and you’ll be able to identify, prioritise and eliminate any usability obstacles on the key user journeys. <a class="more hide-for-print" href="http://userfocus.co.uk/articles/prioritising-functions.html" target="_blank" title="How red routes can help you take charge of your product backlog">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox6" type="checkbox">
@@ -103,7 +137,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox7">Brainstorm & sketch</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Find a war room, fill it with markers and drinks, get together: sketch, discuss, vote, disrupt, have fun! <a class="more hide-for-print" href="http://www.gamestorming.com/the-wiki/" target="_blank" title="Gamestorming">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox7" type="checkbox">
@@ -115,7 +149,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox8">Wireframe</label>
-				<p>And all kinds of device inputs. </p>
+				<p>Add some details and structure to your ideas, reuse patterns and create pages on top of your user flows so you'll not leave anything back. <a class="more hide-for-print" href="http://www.uxpin.com/guide-to-wireframing.html" target="_blank" title="The Guide to Wireframing">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox8" type="checkbox">
@@ -127,7 +161,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox9">Prototype</label>
-				<p>Everything you need to know, almost. </p>
+				<p>You can start creating paper prototypes and continuosly iterate to get more functional ones. Use sketches, HTML pages or static images, just get some people and test it. <a class="more hide-for-print" href="http://uxdesignweekly.com/ux-resources/prototyping-tools/" target="_blank" title="Prototyping Tools">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox9" type="checkbox">
@@ -143,7 +177,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox10">IA</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Understand your users, your data structure and your channels. How can you organise your navigation and content in a clear and consistent way? <a class="more hide-for-print" href="http://alistapart.com/article/thedisciplineofcontentstrategy" target="_blank" title="The Discipline of Content Strategy">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox10" type="checkbox">
@@ -155,7 +189,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox11">Language</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Follow your brand personality, keep in mind users' culture and language, the context of your product and make sure they understand you. <a class="more hide-for-print" href="#" target="_blank" title="...">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox11" type="checkbox">
@@ -167,7 +201,8 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox12">Accessibility</label>
-				<p>Everything you need to know, almost. </p>
+				<p>You don’t need to add extra functionality or to duplicate any content. The key is simply to assess the requirements of those with different skills and limited devices. <a class="more hide-for-print" href="https://www.gov.uk/service-manual/user-centred-design/accessibility.html" target="_blank" title="GOV.UK Accessibility">Read more</a></p>
+				
 			</div>
 			<div class="right">
 				<input id="checkbox12" type="checkbox">
@@ -183,7 +218,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox13">UI elements</label>
-				<p>Reuse what you already got, follow your style guidelines, not have one? Create your guidelines. Think small, then create pages.</p>
+				<p>Reuse what you already got, follow your style guidelines, not have one? Create your guidelines. Think small, then create pages. <a class="more hide-for-print" href="http://styleguides.io/" target="_blank" title="styleguides.io">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox13" type="checkbox">
@@ -195,7 +230,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox14">Gestures</label>
-				<p>So you've have a swipe slider? Tell me more about pinch, drag, zoom, rotate, shake, 6" smartphones, left handed people, mouseover, kinect, motion detection, camera, minority report, flying jetpacks... </p>
+				<p>So you've have a swipe slider? Tell me more about pinch, drag, zoom, rotate, shake, 6" smartphones, left handed people, mouseover, kinect, motion detection... <a class="more hide-for-print" href="http://www.smashingmagazine.com/2013/05/24/gesture-driven-interface/" target="_blank" title="Beyond The Button: Embracing The Gesture-Driven Interface">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox14" type="checkbox">
@@ -207,7 +242,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox15">Responsiveness</label>
-				<p>Can I see my favourites on my mobile? Oh, and what about my smart watch which work as a remote for my 50" TV. Also, remember cross device experience.</p>
+				<p>Can I see it on my mobile? Oh wait, what about my smart-watch which work as a remote for my 50" TV. Bonus: remember cross device experience. <a class="more hide-for-print" href="http://uxmag.com/articles/create-a-better-responsive-user-experience/" target="_blank" title="Create a Better Responsive User Experience">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox15" type="checkbox">
@@ -222,8 +257,8 @@
 				<img class="left" src="img/icons128/lunch.png">
 			</div>
 			<div class="card-content left">
-				<label for="checkbox16">Waiting time</label>
-				<p>If your users have to wait ages for load a video of your cat, at least show them a loader, if take longer why don't you try something more enterteining?</p>
+				<label for="checkbox16">Waiting times</label>
+				<p>If your users have to wait ages for load a video of your cat, at least show them a loader, if take longer why don't you try something more enterteining? <a class="more hide-for-print" href="http://www.sitepoint.com/3-tips-make-application-feel-faster/" target="_blank" title="3 Tips To Make Your Application Feel Faster">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox16" type="checkbox">
@@ -235,7 +270,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox17">Errors</label>
-				<p>Be clear and specific on what and where user's error is. I mean, your error, because if it's your fault you should say it. </p>
+				<p>Be clear and specific on what and where user's error is. I mean, your error, because if it's your fault you should say it. <a class="more hide-for-print" href="http://uxmag.com/articles/failing-gracefully" target="_blank" title="Failing Gracefully">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox17" type="checkbox">
@@ -247,7 +282,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox18">Completed actions</label>
-				<p>Give immediate feedback of successful user's actions. Do not always wait for server response, trust your product once in a while.</p>
+				<p>Give immediate and clear feedback of successful user's actions. Do not always wait for server response, trust your server once in a while! <a class="more hide-for-print" href="http://www.lukew.com/ff/entry.asp?1759" target="_blank" title="Performing Actions Optimistically">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox18" type="checkbox">
@@ -263,7 +298,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox19">Finalise layout</label>
-				<p>Everything you need to know, almost. </p>
+				<p>It's time to let your design shine, make it in the right way, don't stop at the first solution, always ask "is this the best you can do?" <a class="more hide-for-print" href="http://www.usability.gov/what-and-why/visual-design.html" target="_blank" title="Visual Design Basics">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox19" type="checkbox">
@@ -275,7 +310,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox20">Use of images and icons</label>
-				<p>And all kinds of device inputs. </p>
+				<p>Use of icons and images is strongly influenced by context, culture and layout that you use. Like icons, test your images, small changes can bring huge improvements. <a class="more hide-for-print" href="http://www.nngroup.com/articles/icon-usability/" target="_blank" title="Icon Usability">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox20" type="checkbox">
@@ -287,7 +322,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox21">Font & colors hierarchy</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Use colors and font sizes properly and wisely, follow your guidelines and keep it simple. The best visual hierarchies lead users to take the action confidently. <a class="more hide-for-print" href="http://52weeksofux.com/post/443828775/visual-hierarchy" target="_blank" title="Visual hierarchy">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox21" type="checkbox">
@@ -303,7 +338,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox22">Micro copy</label>
-				<p>Every word is important, and a bit of personality will help your brand</p>
+				<p>Every word is important, and a bit of personality will help your brand. <a class="more hide-for-print" href="http://www.smashingmagazine.com/2012/07/18/the-personality-layer/" target="_blank" title="The Personality Layer">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox22" type="checkbox">
@@ -315,7 +350,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox23">Micro interactions</label>
-				<p>Trigger, rules, feedback, loop. Details make the product. ...Ever eard about easter eggs?</p>
+				<p>Trigger, rules, feedback, loop. Details make the product. ...Ever heard about easter eggs? <a class="more hide-for-print" href="http://microinteractions.com/what-is-a-microinteraction/" target="_blank" title="What is a microinteraction">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox23" type="checkbox">
@@ -327,7 +362,9 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox24">Transitions</label>
-				<p>Be consistent, be smooth, be subdle.</p>
+				<p>Motion in the world of material design is not only beautiful, it builds meaning about the spatial relationships, functionality, and intention of the system. <a class="more hide-for-print" href="http://www.google.co.uk/design/spec/animation/authentic-motion.html" target="_blank" title="Material Design Authentic motion">Read more</a></p>
+				<!-- http://www.smashingmagazine.com/2013/10/23/smart-transitions-in-user-experience-design/ -->
+				<!-- http://www.smashingmagazine.com/2012/02/28/mission-transition/ -->
 			</div>
 			<div class="right">
 				<input id="checkbox24" type="checkbox">
@@ -343,7 +380,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox26">KPI Setup</label>
-				<p>What you want to achieve? What are your goals? Write down how you define success and insuccess and check if you have everything you need to collect the data you need.</p>
+				<p>What you want to achieve? What are your goals? Write down how you define success and insuccess and check if you have everything you need to collect the data. <a class="more hide-for-print" href="http://www.gv.com/lib/how-to-choose-the-right-ux-metrics-for-your-product" target="_blank" title="How to Choose the Right UX Metrics for Your Product">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox26" type="checkbox">
@@ -355,7 +392,7 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox25">AB Test plan</label>
-				<p>Everything you need to know, almost. </p>
+				<p>Plan your AB test ahead and if you can plan a short roadmap of improvements. Your goal is not just improve KPIs, but learn something. <a class="more hide-for-print" href="https://www.gov.uk/service-manual/user-centred-design/user-research/multivariate-testing.html" target="_blank" title="Craig Sullivan, an industry expert on conversion optimisation">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox25" type="checkbox">
@@ -367,24 +404,34 @@
 			</div>
 			<div class="card-content left">
 				<label for="checkbox27">Test</label>
-				<p>UX lab, survey, sessions recording... </p>
+				<p>UX lab, survey, sessions recording... test, observe and fix, test, observer and fix... <a class="more hide-for-print" href="http://www.nngroup.com/articles/which-ux-research-methods/" target="_blank" title="When to Use Which User-Experience Research Methods">Read more</a></p>
 			</div>
 			<div class="right">
 				<input id="checkbox27" type="checkbox">
 			</div>
 		</div>  
 	</div>
+	</form>
 
 
-	<div id="footer" class="row">
-		Created by&nbsp;<a href="https://twitter.com/sovesove" target="_blank" alt="@sovesove">@sovesove</a>&nbsp;|&nbsp;Icons by&nbsp;<a href="http://mokreo.com/" target="_blank" alt="mokreo.com">mokreo.com</a>
+	<div id="footer" class="">
+		<!-- <a href="https://twitter.com/sovesove" class="twitter-follow-button" data-show-count="false">Follow @sovesove</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+		<div id="credits">Created by&nbsp;<a href="https://twitter.com/sovesove" target="_blank" alt="@sovesove">@sovesove</a>&nbsp;|&nbsp;Icons by&nbsp;<a href="http://mokreo.com/" target="_blank" title="mokreo.com">mokreo.com</a>
+		</div>
+		<div>
+			<a class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank">Do you like that?</a>
+			<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';
+		/*if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}*/})()</script>
+		</div>
 	</div>
 
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/vendor/jquery.js"></script>
+    <!-- <script src="js/vendor/jquery.js"></script> -->
 
     <script src="js/jquery-labelauty.js"></script>
+    <script src="js/garlic.js"></script>
 	<script>
 		$(document).ready(function(){
 		    $(":checkbox").labelauty({ label: false });
