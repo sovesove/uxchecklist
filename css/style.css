@@ -83,6 +83,23 @@ a:hover {
     padding: 1.25rem;
     text-align: center;
 }
+#credits {
+    margin-bottom: 20px;
+}
+#footer .typeform-share {
+	border-radius: 5px;
+	background-color: #369;
+	color: white;
+	font-size: 0.9em;
+	line-height: normal;
+	padding: 5px 10px;
+	margin-left: 10px;
+	text-decoration: none !important;
+	border-bottom: none;
+}
+#footer .typeform-share:hover {
+	background-color: #47B;
+}
 
 .title {
 	color: #FFF;
