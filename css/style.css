@@ -183,7 +183,7 @@ a:hover {
 
 @media (min-width: 1024px) {
 	body {
-		background: #fefefe;
+
 	}
 
 	.row {
@@ -228,15 +228,6 @@ a:hover {
 	    -ms-transform:     rotate(-90deg); 
 	    -o-transform:      rotate(-90deg); 
 	}
-
-/*
-	.title span:before {
-		content: '';
-		padding-top: 100%;
-		height: 0;
-		display: block;
-	}
-*/
 
 	.cards {
 	-webkit-flex-basis: 32%;
