@@ -35,9 +35,12 @@
 
 	<div id="header" class="">
 		<div id="title">
-			<h1>UX Project Checklist - ßeta</h1>&nbsp;&nbsp;<a id="print" class="hide-for-print" href="javascript:void(0)" onclick="window.print();">Print</a>
+			<h1>UX Project Checklist</h1>
+			<!-- <a id="print" class="hide-for-print" href="javascript:void(0)" onclick="window.print();">Print</a> -->
+			<button id="print" class="hide-for-print" onclick="window.print();" type="button">Print</button>
+			<button id="reset" class="hide-for-print">Reset</button>
 		</div>
-		<div id="sharebox">
+		<div id="sharebox" class="hide-for-print">
 			<!-- twitter plugin -->
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="sovesove" data-hashtags="uxchecklist">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -47,7 +50,7 @@
 		</div>
 	</div>
 	
-	<form data-persist="garlic" method="POST">
+	<form id="checklist-form" data-persist="garlic" method="POST">
 	<div class="row clearfix">
 		<div id="Research" class="title"><span>Research</span></div>
 		<div class="cards">
@@ -419,7 +422,7 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
 		<div id="credits">Created by&nbsp;<a href="https://twitter.com/sovesove" target="_blank" alt="@sovesove">@sovesove</a>&nbsp;|&nbsp;Icons by&nbsp;<a href="http://mokreo.com/" target="_blank" title="mokreo.com">mokreo.com</a>
 		</div>
-		<div>
+		<div class="hide-for-print">
 			<a class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank">Do you like that?</a>
 			<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';
 		/*if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}*/})()</script>
@@ -428,13 +431,17 @@
 
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- <script src="js/vendor/jquery.js"></script> -->
+    <!--  --><script src="js/vendor/jquery.js"></script>
 
-    <script src="js/jquery-labelauty.js"></script>
     <script src="js/garlic.js"></script>
+    <script src="js/jquery-labelauty.js"></script>
 	<script>
 		$(document).ready(function(){
 		    $(":checkbox").labelauty({ label: false });
+		});
+		$("#reset").on('click', function(){
+			$("#checklist-form")[0].reset();
+			location.reload();
 		});
 	</script>
 </body>
