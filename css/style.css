@@ -101,6 +101,10 @@ small {
 #credits {
     margin-bottom: 20px;
 }
+#inspiredby {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
 #footer .typeform-share {
 	border-radius: 5px;
 	background-color: #369;
