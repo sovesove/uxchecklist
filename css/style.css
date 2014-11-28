@@ -55,28 +55,39 @@ a:hover {
 	padding-bottom: 2px;
 }
 
-#print {
+#print, #reset {
 	border-radius: 5px;
 	background-color: #369;
 	color: white;
 	font-size: 0.9em;
-	line-height: normal;
 	padding: 5px 10px;
-	margin-left: 10px;
-	text-decoration: none !important;
-	border-bottom: none;
+	margin-left: 5px;
+	cursor: pointer;
+	border: none;
 }
 #print:hover {
 	background-color: #47B;
+}
+#reset {
+	background-color: transparent;
+	border: 1px solid #DF5941;
+	color: #DF5941;
+}
+#reset:hover {
+	background-color: #DF5941;
+	color: #FFF;
 }
 
 #header {
     padding: 0.8rem;
     text-align: center;
 }
-#header h1{
+#header h1 {
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px;
+}
+small {
+	font-size: 0.7em;
 }
 
 #title {
