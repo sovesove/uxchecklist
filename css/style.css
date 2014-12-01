@@ -37,11 +37,11 @@ body {
 
 
 .rotate {
--webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);
--ms-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 	text-decoration: none;
 	white-space: nowrap;
 }
-a:hover {
+.no-touch a:hover {
 	text-decoration: none;
 	border-bottom: 2px solid;
 	padding-bottom: 2px;
@@ -65,7 +65,7 @@ a:hover {
 	cursor: pointer;
 	border: none;
 }
-#print:hover {
+.no-touch #print:hover {
 	background-color: #47B;
 }
 #reset {
@@ -73,7 +73,7 @@ a:hover {
 	border: 1px solid #DF5941;
 	color: #DF5941;
 }
-#reset:hover {
+.no-touch #reset:hover {
 	background-color: #DF5941;
 	color: #FFF;
 }
@@ -116,7 +116,7 @@ small {
 	text-decoration: none !important;
 	border-bottom: none;
 }
-#footer .typeform-share:hover {
+.no-touch #footer .typeform-share:hover {
 	background-color: #47B;
 }
 
