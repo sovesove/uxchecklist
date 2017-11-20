@@ -1,4 +1,5 @@
 UX Project Checklist
 ===========
 
-README FILE TODO
+Find latest version at:
+https://github.com/uxchecklist
