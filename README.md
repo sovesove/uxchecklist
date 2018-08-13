@@ -1,4 +1,4 @@
-UX Project Checklist
+UX Project Checklist - Deprecated
 ===========
 
 Find latest version at:
